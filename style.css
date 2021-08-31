@@ -1,10 +1,22 @@
+/* notes*/
 body {
     background-color: black;
     margin: 0%;
     font-family:'Lucida Sans Typewriter',Arial, helvetica;
     color:blanchedalmond
 }
+#about{
+    height:700px;
+}
+#miguel{
 
+}
+#about, #project {
+
+}
+#aboutText {
+    
+}
 #barHead{
     background-color: black;
     display: flex;
@@ -26,14 +38,38 @@ a {
     text-decoration: none;
     font-size: 17px;
 }
-
 a:hover{
     background-color: darkolivegreen;
     color: blanchedalmond;
 }
 .row {
     display:flex;
+    justify-content: space-evenly;
+    align-items: stretch;
 }
+
+@media only screen and (max-width: 414px){
+    .row{
+        flex-direction: column;
+        height:970px;
+    }
+    .column{
+        height:300px;
+        display:block;
+    }
+    .column:hover {
+        background-color: darkolivegreen;
+        height:360px;
+    }
+    #project1:hover, #project2:hover, #project3:hover{
+        filter: none;
+        opacity:1;
+    }
+    #project {
+        height: 1200px;
+    }
+}
+
 @media only screen and (min-width:415px){
     .row{
         height:500px;
@@ -44,36 +80,47 @@ a:hover{
         padding: 10px;
         background-color: black;
         height: 300px;
+        position: center;
+        width: 100%;
+        
     }
     .column:hover{
         background-color: darkolivegreen;
+        height:400px;
         flex:2;
     }
-}
-@media only screen and (max-width: 414px){
-    .row{
-        flex-direction: column;
-        height:970px;
-    }
-    .column{
-        height:300px;
-    }
-    .column:hover {
-        background-color: darkolivegreen;
-        height:360px;
+    #project1:hover, #project2:hover, #project3:hover{
+        filter: none;
+        opacity:1;
     }
 }
 
 
-#about{
-    height:700px;
+h1 {
+    font-weight: bold;
+    text-align: center;
 }
-#aboutText{
-
+#project1 {
+    background-image: url(images/Screen\ Shot\ 2021-08-30\ at\ 11.06.24\ PM.png);
+    background-size: cover;
+    opacity: .6;
+    filter: blur(5px);
+    display: block;
 }
-#project{
+#project2 {
+    background-image: url(images/password.png);
+    background-size: cover;
+    background-position: center;
+    opacity: .6;
+    filter: blur(5px);
 }
-
+#project3 {
+    background-image: url(images/quiz.png);
+    background-size: cover;
+    background-position: center;
+    opacity: .6;
+    filter: blur(5px);
+}
 #contact{
     height:100px;
     display: flex;
