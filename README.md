@@ -13,6 +13,8 @@ Professional Portfolio Project
 - HTML
 
 Images
+
+
 <img src="images/Portfolio1.png" alt="Portfolio Image 1">
 <img src="images/Portfolio2.png" alt="Portfolio Image 2">
 
