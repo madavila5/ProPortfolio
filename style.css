@@ -1,4 +1,4 @@
-/* notes*/
+/* for specific items*/
 body {
     background-color: black;
     margin: 0%;
@@ -8,21 +8,21 @@ body {
 #about{
     height:600px;
     margin: auto;
-    
 }
-#miguel{
+#miguel, #project{
     font-size: 40px;
+    text-shadow: 2px 2px 5px grey;
+    font-weight: bold;
+    margin: auto;
+    border-top: white;
+    padding: 5%;
 }
 #project{
-    font-size: 40px;
-    
-
+    font-size: 30px;
 }
 #pic {
     display: flex;
-    padding: 20px ;
     margin: auto;
-
 }
 #aboutText {
     font-size: 26px;
@@ -30,20 +30,17 @@ body {
     font-weight: bold;
     margin: 20px;
     padding: 5%;
-
 }
 #barHead{
-    background-color: black;
+    background-color: darkolivegreen;
     display: flex;
     padding: 0%;
-    margin: .75%;
     box-sizing: border-box;
     justify-content: flex-end;
 }
 .bar {
     overflow: hidden;
     background-color: black;
-
 }
 a {
     float: left;
@@ -56,6 +53,8 @@ a {
 a:hover{
     background-color: darkolivegreen;
     color: blanchedalmond;
+    font-size: 20px;
+    transition-duration: .25s;
 }
 .row {
     display:flex;
@@ -72,8 +71,6 @@ h1 {
     background-size: cover;
     opacity: .6;
     filter: blur(5px);
-
-    
 }
 #project2 {
     background-image: url(images/password.png);
@@ -81,7 +78,6 @@ h1 {
     background-position: center;
     opacity: .6;
     filter: blur(5px);
-    
 }
 #project3 {
     background-image: url(images/quiz.png);
@@ -90,15 +86,13 @@ h1 {
     background-position: center;
     opacity: .6;
     filter: blur(5px);
-   
-    
 }
 #contact{
     height:100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background-color: darkolivegreen;
 }
 
 /*for smaller devices*/
@@ -122,6 +116,9 @@ h1 {
     }
     .contact{
         height: 200px;
+    }
+    #pic{
+        box-shadow:10px 10px darkolivegreen;
     }
 }
 /*for larger device*/
