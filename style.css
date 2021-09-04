@@ -6,16 +6,31 @@ body {
     color:blanchedalmond
 }
 #about{
-    height:700px;
+    height:600px;
+    margin: auto;
+    
 }
 #miguel{
+    font-size: 40px;
+}
+#project{
+    font-size: 40px;
+    
 
 }
-#about, #project {
+#pic {
+    display: flex;
+    padding: 20px ;
+    margin: auto;
 
 }
 #aboutText {
-    
+    font-size: 26px;
+    font-family:'Courier New', Courier, monospace ;
+    font-weight: bold;
+    margin: 20px;
+    padding: 5%;
+
 }
 #barHead{
     background-color: black;
@@ -48,14 +63,51 @@ a:hover{
     align-items: stretch;
 }
 
+h1 {
+    font-weight: bold;
+    text-align: center;
+}
+#project1 {
+    background-image: url(images/Screen\ Shot\ 2021-08-30\ at\ 11.06.24\ PM.png);
+    background-size: cover;
+    opacity: .6;
+    filter: blur(5px);
+
+    
+}
+#project2 {
+    background-image: url(images/password.png);
+    background-size: cover;
+    background-position: center;
+    opacity: .6;
+    filter: blur(5px);
+    
+}
+#project3 {
+    background-image: url(images/quiz.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .6;
+    filter: blur(5px);
+   
+    
+}
+#contact{
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*for smaller devices*/
 @media only screen and (max-width: 414px){
     .row{
         flex-direction: column;
-        height:970px;
     }
     .column{
         height:300px;
-        display:block;
     }
     .column:hover {
         background-color: darkolivegreen;
@@ -66,64 +118,41 @@ a:hover{
         opacity:1;
     }
     #project {
-        height: 1200px;
+        height: 1300px;
+    }
+    .contact{
+        height: 200px;
     }
 }
-
+/*for larger device*/
 @media only screen and (min-width:415px){
+    #about{
+        column-count: 2;
+    }
     .row{
         height:500px;
         align-items: center;
+        flex-direction: row;
     }
-    .column {
-        flex-grow: 1;
+    .column { 
         padding: 10px;
         background-color: black;
         height: 300px;
-        position: center;
         width: 100%;
-        
-    }
+        display: block;
+        margin: auto;
+    } 
+   
     .column:hover{
         background-color: darkolivegreen;
-        height:400px;
+        height:350px;
         flex:2;
     }
     #project1:hover, #project2:hover, #project3:hover{
         filter: none;
         opacity:1;
     }
-}
-
-
-h1 {
-    font-weight: bold;
-    text-align: center;
-}
-#project1 {
-    background-image: url(images/Screen\ Shot\ 2021-08-30\ at\ 11.06.24\ PM.png);
-    background-size: cover;
-    opacity: .6;
-    filter: blur(5px);
-    display: block;
-}
-#project2 {
-    background-image: url(images/password.png);
-    background-size: cover;
-    background-position: center;
-    opacity: .6;
-    filter: blur(5px);
-}
-#project3 {
-    background-image: url(images/quiz.png);
-    background-size: cover;
-    background-position: center;
-    opacity: .6;
-    filter: blur(5px);
-}
-#contact{
-    height:100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .row a{
+        width: 300px;
+    }
 }
