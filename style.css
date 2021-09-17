@@ -3,7 +3,7 @@ body {
     background-color: black;
     margin: 0%;
     font-family:'Lucida Sans Typewriter',Arial, helvetica;
-    color:blanchedalmond
+    color: white;
 }
 #about{
     height:600px;
@@ -14,8 +14,9 @@ body {
     text-shadow: 2px 2px 5px grey;
     font-weight: bold;
     margin: auto;
-    border-top: white;
+    border-top: #93877E;
     padding: 5%;
+    color: #93877E;
 }
 #project{
     font-size: 30px;
@@ -30,6 +31,7 @@ body {
     font-weight: bold;
     margin: 20px;
     padding: 5%;
+    color: #93877E;
 }
 #barHead{
     background-color: darkolivegreen;
@@ -67,20 +69,20 @@ h1 {
     text-align: center;
 }
 #project1 {
-    background-image: url(images/Screen\ Shot\ 2021-08-30\ at\ 11.06.24\ PM.png);
+    background-image: url(images/CodeRef1.png);
     background-size: cover;
     opacity: .6;
     filter: blur(5px);
 }
 #project2 {
-    background-image: url(images/password.png);
+    background-image: url(images/Password1.png);
     background-size: cover;
     background-position: center;
     opacity: .6;
     filter: blur(5px);
 }
 #project3 {
-    background-image: url(images/quiz.png);
+    background-image: url(images/therenback.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
